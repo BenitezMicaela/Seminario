@@ -1,6 +1,8 @@
 const express = require('express');//Cargar la librería
 const app = express();//cargar métodos en la variable app.
-const bodyParser = require('body-parser');
+const bodyParser = require('body-parser');//cargar el body con el formulario
+
+app.use(bodyParser.urlencoded({ extended: false }))// for parsing application/json/text
 
 //Para la ruta raíz, cuando la petición sea GET, devuelve un string (res.send('hello world');)
 //req - lo que me envíen por esa ruta al servidor.
@@ -16,4 +18,4 @@ app.post('/', function(req, res) {
     console.log(req.body);
 });
 
-app.use(bodyParser.urlencoded({ extended: false }))// for parsing application/json/tex
+//postgres://micaela_benitez:ubvL6NcB7GpaXOPzMSnHDOtYORMFiQ3C@dpg-ckf1v6unpffc73b2amgg-a.oregon-postgres.render.com/seminario_1
