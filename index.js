@@ -1,7 +1,7 @@
-import sequelize from 'sequelize';
+//import sequelize from 'sequelize';
 import {Localidad,Genero,NivelEstudio,Pregunta,Respuesta,Encuesta,RespuestaEncuesta} from 'modelos_base.js'; 
 
-const { Sequelize } = require('sequelize');
+//const { Sequelize } = require('sequelize');
 const express = require('express');//Cargar la librería
 const app = express();//cargar métodos en la variable app.
 const bodyParser = require('body-parser');//cargar el body con el formulario
@@ -21,7 +21,7 @@ app.listen(3000,()=>{console.log('Recibiendo...')});
 app.post('/', function(req, res) {
     console.log(req.body);
 });
-
+/*
 // Option 1: Passing a connection URI
 const sequelize = new Sequelize('postgres://micaela_benitez:ubvL6NcB7GpaXOPzMSnHDOtYORMFiQ3C@dpg-ckf1v6unpffc73b2amgg-a/seminario_1') //Internal Command
 
@@ -33,4 +33,4 @@ try {
 }
 
 sequelize.sync({ force: true});
-
+*/
