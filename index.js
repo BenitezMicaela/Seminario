@@ -1,6 +1,3 @@
-//import sequelize from 'sequelize';
-import {Localidad,Genero,NivelEstudio,Pregunta,Respuesta,Encuesta,RespuestaEncuesta} from 'modelos_base.js'; 
-
 //const { Sequelize } = require('sequelize');
 const express = require('express');//Cargar la librería
 const app = express();//cargar métodos en la variable app.
